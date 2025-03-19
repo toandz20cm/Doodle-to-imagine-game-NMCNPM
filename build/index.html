@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-security-policy" content="">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/drawingboard.js/0.4.2/drawingboard.css" rel="stylesheet" data-svelte="svelte-bw39ln">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" data-svelte="svelte-bw39ln"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawingboard.js/0.4.2/drawingboard.min.js" data-svelte="svelte-bw39ln"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js" data-svelte="svelte-bw39ln"></script>
+    <link href="./_app/immutable/assets/+layout-3c7e677a.css" rel="stylesheet">
+    <link href="./_app/immutable/assets/+page-376b236d.css" rel="stylesheet">
+    <link rel="modulepreload" href="./_app/immutable/start-909cf230.js">
+    <link rel="modulepreload" href="./_app/immutable/chunks/index-a207c28c.js">
+    <link rel="modulepreload" href="./_app/immutable/chunks/singletons-b4916afd.js">
+    <link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-dd7ed0fb.js">
+    <link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-976a80b3.js">
+  </head>
+  <body>
+    <div>
+      <div class="flex flex-wrap gap-x-4 gap-y-2 justify-center my-8">
+        <canvas class="border-[1.2px] desktop:mt-[34px] hidden"></canvas>
+        <div class="flex flex-col items-center ">
+          <div id="board-container"></div>
+        </div>
+      </div>
+      <script type="module" data-sveltekit-hydrate="1e8d5i">
+        import { set_public_env, start } from "./_app/immutable/start-909cf230.js";
+
+        set_public_env({});
+
+        start({
+          target: document.querySelector('[data-sveltekit-hydrate="1e8d5i"]').parentNode,
+          paths: {"base":"","assets":""},
+          route: true,
+          spa: false,
+          trailing_slash: "never",
+          hydrate: {
+            status: 200,
+            error: null,
+            node_ids: [0, 2],
+            params: {},
+            routeId: ""
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>
