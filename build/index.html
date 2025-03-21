@@ -16,6 +16,40 @@
     <link rel="modulepreload" href="./_app/immutable/chunks/singletons-b4916afd.js">
     <link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-dd7ed0fb.js">
     <link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-976a80b3.js">
+    <style>
+      /* CSS cho chế độ tối */
+      body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+      }
+
+      /* Điều chỉnh canvas và container */
+      .flex {
+        background-color: #1a1a1a;
+      }
+
+      canvas {
+        border-color: #404040 !important;
+        background-color: #2d2d2d;
+      }
+
+      /* Ghi đè style của drawingboard.js nếu cần */
+      .drawing-board-control-navigation,
+      .drawing-board-control-colors,
+      .drawing-board-control-drawingmode {
+        background-color: #2d2d2d !important;
+        border-color: #404040 !important;
+      }
+
+      .drawing-board-control-colors-current {
+        border-color: #ffffff !important;
+      }
+
+      /* Đảm bảo text dễ đọc */
+      .drawing-board-control-navigation a {
+        color: #ffffff !important;
+      }
+    </style>
   </head>
   <body>
     <div>
